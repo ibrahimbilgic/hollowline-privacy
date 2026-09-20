@@ -1,0 +1,43 @@
+:root{
+  --ink:#f3f0ff; --dim:#b9b2d8; --faint:#8a83ab;
+  --bg:#141024; --card:#1d1734; --line:#322a52;
+  --violet:#7b5cff; --aqua:#49e0d2; --gold:#ffc861;
+  --measure:38rem;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:400 17px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.wrap{max-width:var(--measure); margin:0 auto; padding:0 20px 5rem}
+header{padding:3.5rem 0 1.5rem; border-bottom:1px solid var(--line); margin-bottom:2.5rem}
+.mark{display:flex; align-items:center; gap:.6rem; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; font-size:.82rem; color:var(--dim)}
+.mark .dot{width:.7rem; height:.7rem; border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#fff,var(--aqua) 45%,var(--violet));
+  box-shadow:0 0 14px rgba(123,92,255,.8)}
+h1{font-size:2rem; line-height:1.2; margin:1.4rem 0 .4rem; letter-spacing:-.01em}
+.updated{color:var(--faint); font-size:.9rem; margin:0}
+.jump{margin-top:1.4rem; font-size:.9rem}
+.jump a{color:var(--aqua)}
+h2{font-size:1.16rem; margin:2.6rem 0 .6rem; letter-spacing:-.005em}
+h2::before{content:""; display:block; width:2rem; height:2px; background:var(--violet);
+  border-radius:2px; margin-bottom:.8rem}
+p,li{color:var(--dim)}
+p{margin:.8rem 0}
+strong{color:var(--ink); font-weight:600}
+a{color:var(--aqua)}
+a:hover{color:var(--ink)}
+ul{padding-left:1.1rem; margin:.8rem 0}
+li{margin:.45rem 0}
+.lede{background:var(--card); border:1px solid var(--line); border-left:3px solid var(--aqua);
+  border-radius:14px; padding:1.1rem 1.25rem; margin:1.8rem 0}
+.lede p{margin:.5rem 0}
+.lede p:first-child{margin-top:0}
+.lede p:last-child{margin-bottom:0}
+.sep{height:1px; background:var(--line); margin:4rem 0 0}
+footer{padding-top:1.6rem; color:var(--faint); font-size:.88rem}
+footer a{color:var(--faint); text-decoration:underline}
+code{background:#241d40; padding:.1em .4em; border-radius:5px; font-size:.92em; color:var(--gold)}
+@media (max-width:420px){ h1{font-size:1.6rem} body{font-size:16px} }
